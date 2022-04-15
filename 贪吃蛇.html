@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>贪吃蛇</title>
+  <script src="jquery-3.3.1.min.js"></script>
+  <style>
+    div#header{
+    width:96%;
+    margin:20px;
+    height:52px}
+
+        span{
+        float:right;
+        display:inline-block;
+        width:16%;
+        height:32px;
+        background:yellow;
+        border:1px solid #000;
+        text-align:center;
+        line-height:32px;
+
+        }
+        div#content{
+        width:1488px;
+        height:597px;
+        border:3px solid #000;
+        margin:0 20px 0 20px;
+        position:relative;
+        left:0;
+        top:0;}
+		#state_bar{
+		color:#F00;
+		background-color:#0000;
+		border:0px;
+		width:90%;}
+		#unitTanChiShe10,#unitTanChiShe20{
+		text-align:center;
+		line-height:32px;}
+
+    </style>
+ </head>
+ <body>
+  <div id="header">
+   <span class="high-score">high-score: 0</span>
+   <span class="play1_score">play1_score: 0</span>
+   <span class="play2_score">play2_score: 0</span>
+   <span class="level">level: 0</span>
+   <span class="title">贪吃蛇小游戏</span>
+   <div class="btn-control" style="float:left; margin:0 20px 0 20px">
+    <img id="btn-cg" src="start.png" alt="开始" width="32px" height="32px" />
+   </div>
+   <div class="restart" style="float:left;margin:0 20px 0 20px ">
+    <img id="btn-restart" src="restart .png" alt="重开" width="32px" height="32px" />
+   </div>
+    <div class="btn-control" style="float:left; margin:0 20px 0 20px">
+    <img id="btn-transfer" src="transfer.png" alt="转换" width="32px" height="32px" />
+   </div>
+  </div>
+  <div id="content"></div>
+  <span id="state_bar"></span>
+  <script src="game.js"></script>
+ </body>
+</html>
